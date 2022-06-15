@@ -26,7 +26,7 @@
       <a class="logo-image" href="WebStudio"><span class="accent">Web</span>Studio</a>
       <nav>
         <ul class="menu-nav">
-          <li><a class="link" href="agencja">Agencja</a></li>
+          <li><a class="link active" href="agencja">Agencja</a></li>
           <li><a class="link" href="./portfolio.html">Portfolio</a></li>
           <li><a class="link" href="kontakt">Kontakt</a></li>
         </ul>
@@ -58,7 +58,7 @@
       <section class="head">
         <div class="container">
         <h1 class="head-text">Efektywne rozwiązania dla waszego biznesu</h1>
-        <button class="button-one" type="button"><span class="button-text">Zamów usługę</span></button>
+        <button class="button-one" type="button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
       <section class="features">
@@ -456,5 +456,11 @@
     </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
